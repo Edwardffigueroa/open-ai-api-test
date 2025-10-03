@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI API Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OpenAI API Test</h1>
+
+        <!-- Chat Completion Section -->
+        <section class="api-section">
+            <h2>💬 Chat Completion (Fashion Expert)</h2>
+            <div class="input-group">
+                <textarea id="chatInput" placeholder="Ask a fashion question..." rows="3"></textarea>
+                <button onclick="getChatCompletion()">Send</button>
+            </div>
+            <div id="chatResult" class="result"></div>
+        </section>
+
+        <!-- Image Generation Section -->
+        <section class="api-section">
+            <h2>🎨 Image Generation (DALL-E 3)</h2>
+            <div class="input-group">
+                <textarea id="imagePrompt" placeholder="Describe an image to generate..." rows="3"></textarea>
+                <button onclick="generateImage()">Generate</button>
+            </div>
+            <div id="imageResult" class="result"></div>
+        </section>
+
+        <!-- Text-to-Speech Section -->
+        <section class="api-section">
+            <h2>🔊 Text-to-Speech</h2>
+            <div class="input-group">
+                <textarea id="ttsInput" placeholder="Enter text to convert to speech..." rows="3"></textarea>
+                <button onclick="textToSpeech()">Convert</button>
+            </div>
+            <div id="ttsResult" class="result"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
